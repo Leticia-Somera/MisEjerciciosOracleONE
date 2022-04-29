@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+
+<script>
+
+    function saltarlinea () {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    };
+
+    function imprimir (frase) {
+
+        document.write(frase)
+        saltarlinea();
+    }
+
+    function edades () {
+
+        var miEdad = 32;
+        var edadHermana = 27;
+        var restaEdades = miEdad - edadHermana;
+        return imprimir("Nuestra diferencia de edad es: " + restaEdades);
+    }
+
+    edades();
+
+</script>
