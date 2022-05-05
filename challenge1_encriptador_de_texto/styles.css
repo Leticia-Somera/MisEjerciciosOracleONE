@@ -1,0 +1,157 @@
+/*********** Estilos generales ***********/
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Baloo+Bhai+2:wght@700&family=Baloo+Bhaijaan+2&family=Inter:wght@400;700&family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+    --blue1: #F3F5FC; 
+    --blue2: #0A3871;
+    --blue3: #D8DFE8;
+    --grey: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background: var(--blue1);
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*********** Logo de Alura ***********/
+header img {
+    margin-top: 1%;
+}
+
+/*********** Panel para introducir texto ***********/
+textarea {         
+    border: none;
+    outline: none;
+}
+
+.input-panel {
+    position: absolute;
+    margin: 4% 0 0 12%;
+    width: 45%;    
+}
+
+.input-panel textarea {
+    color: var(--blue2);
+    font-size: 20px;
+}
+
+::placeholder {
+    color: var(--blue2);
+    font-size: large;
+    /* border: none; */
+}
+
+/*********** Advertencia con condiciones para introducir el texto ***********/
+h5 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-weight: normal;
+}
+
+/*********** Botones para encriptar/desencriptar ***********/
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.btn-encrypt {
+    color: white;
+    background-color: var(--blue2);
+    border: var(--blue2);
+    border-radius: 20px;
+    width: 48%;
+    padding: 3%;
+}
+
+.btn-encrypt:hover {
+    opacity: 0.9;
+}
+
+.btn-decrypt {
+    color: var(--blue2);
+    background-color: var(--blue3);
+    border: 1px solid var(--blue2);
+    border-radius: 20px;
+    width: 48%;
+    padding: 3%;   
+}
+
+.btn-decrypt:hover {
+    opacity: 0.7;
+}
+
+/*********** Panel del lado derecho ***********/
+.white-panel {
+    position: absolute;
+    background: white ;
+    border-radius: 22px;
+    text-align: center;
+    padding: 7%;
+    color: var(--grey);
+}
+
+/*********** Elementos que advierten que no se encontró texto ***********/
+.white-panel .white-panel-elements {
+    background: white;
+}
+
+.white-panel .white-panel-elements img {
+    background: white;
+    width: 87%; 
+    margin: auto;   
+}
+
+.white-panel .white-panel-elements h2 {
+    background: white;
+}
+
+.white-panel .white-panel-elements p {
+    background: white;
+}
+
+/*********** Panel donde se muestra el texto encriptado/desencriptado ***********/
+.white-panel textarea {
+    background: white;
+    color: var(--grey);
+}
+
+.result-panel {
+    position: absolute;
+    width: 30%;
+    margin-top: 0;
+    margin-left: 60%;
+}
+
+.result-panel .result-text {
+    background: white;
+    width: 80%;
+}
+
+/*********** Botón para copiar texto ***********/
+.btn-copy-panel {
+    background: white;
+    padding: 1%;
+}
+
+.btn-copy {
+    margin-top: 10%;
+    color: var(--blue2);
+    background-color: var(--blue3);
+    border: 1px solid var(--blue2);
+    border-radius: 20px;
+    width: 100%;
+    padding: 5%; 
+}
+
+.btn-copy:hover {
+    opacity: 0.7;
+}

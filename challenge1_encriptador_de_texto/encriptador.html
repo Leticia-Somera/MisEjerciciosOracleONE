@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!--********** Logo de Alura **********-->
+    <header>
+        <img src="./img/Logo.png" alt="logo_alura">
+    </header>
+    <main>
+
+        <!--********** Panel para introducir el texto **********-->
+        <section class="input-panel">
+            <textarea 
+            type="text" 
+            name="input-text" 
+            id="input-text" 
+            class="input-text"
+            placeholder="Ingrese el texto aquí"
+            cols="53"
+            rows="15"></textarea>
+            <h5><img src="./img/excl_circle.png" alt=""> Solo letras minúsculas y sin acentos</h5>
+            <div class="btn" >
+                <button type="button" class="btn-encrypt" onclick="encrypt()">Encriptar</button>
+                <button type="button" class="btn-decrypt" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </section>
+
+        <!--********** Panel para mostrar el texto encriptado o desencriptado **********-->
+        <section class="result-panel" >
+            <div class="white-panel" >
+                <div class="white-panel-elements">
+                    <img id="img-hidden" src="./img/persona.png" alt="">
+                    <h2 id="title-hidden">Ningún mensaje fue encontrado</h2>                    
+                    <p id="par-hidden"><br>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <textarea style="display: none;"
+                        type="text"
+                        name="result-text"
+                        id="result-text"
+                        cols="45"
+                        rows="25"></textarea>
+                </div>                
+                <div class="btn-copy-panel" >
+                    <button type="button" class="btn-copy" onclick="copyText()">Copiar</button>
+                </div>        
+            </div>            
+        </section>
+
+    </main>  
+    <script src="./app.js"></script>
+    
+</body>
+</html>
